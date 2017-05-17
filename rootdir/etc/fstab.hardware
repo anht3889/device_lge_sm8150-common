@@ -23,3 +23,5 @@
 
 /devices/platform/soc/8804000.sdhci/mmc_host*                        auto                    auto    nosuid,nodev                                                              wait,voldmanaged=external_SD:auto,encryptable=footer
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.*.auto*    auto                    auto    defaults                                                                  voldmanaged=usb:auto
+
+/dev/block/zram0                                                     none                    swap    defaults                                                                  zramsize=1073741824,max_comp_streams=8
