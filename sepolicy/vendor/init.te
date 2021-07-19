@@ -27,3 +27,5 @@ allow init hal_lgdata_hwservice:hwservice_manager { add find };
 
 # Allow init to set attribute to sysfs_kprofiles
 allow init sysfs_kprofiles:file { setattr };
+
+allow init adsprpcd_file:file mounton;
