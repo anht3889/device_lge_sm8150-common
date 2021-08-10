@@ -231,6 +231,8 @@ on boot
     chown system system /sys/class/sensors/apds9930-proximity/enable
     chown system system /sys/class/sensors/apds9930-proximity/poll_delay
 
+    chown system system /sys/class/thermal/thermal_message/sconfig
+
     # Create directory used for display
     # for backward compatibility
     mkdir /persist/display 0770 system graphics
