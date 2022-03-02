@@ -71,6 +71,9 @@ vendor.lge.ril.vss.common_init                      u:object_r:radio_control_pro
 vendor.lge.ril.vss.nv_init                          u:object_r:radio_control_prop:s0
 vendor.lge.ril.modem.uuid_info			    u:object_r:radio_control_prop:s0
 
+# Power
+vendor.powerhal.            u:object_r:vendor_power_prop:s0
+
 # Thermal
 persist.vendor.lge.sys.thermald_miti_off            u:object_r:vendor_thermald_prop:s0
 

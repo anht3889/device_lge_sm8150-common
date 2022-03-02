@@ -122,3 +122,6 @@
 /sys/devices/virtual/misc/msm_amrwbplus/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/fastrpc/adsprpc-smd/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/fastrpc/adsprpc-smd-secure/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+
+# UFS
+/sys/devices/platform/soc/[a-f0-9]+.ufshc/clkgate_enable        u:object_r:vendor_sysfs_scsi_host:s0
