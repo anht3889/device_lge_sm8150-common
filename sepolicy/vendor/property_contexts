@@ -75,6 +75,7 @@ vendor.lge.ril.modem.uuid_info			    u:object_r:radio_control_prop:s0
 vendor.powerhal.            u:object_r:vendor_power_prop:s0
 
 # Thermal
+vendor.thermal.                                     u:object_r:vendor_thermal_prop:s0
 persist.vendor.lge.sys.thermald_miti_off            u:object_r:vendor_thermald_prop:s0
 
 # USB

@@ -11,6 +11,7 @@
 # Devices
 /dev/goodix_fp            u:object_r:fingerprintd_device:s0
 /dev/pn547                u:object_r:nfc_device:s0
+/dev/thermal(/.*)?        u:object_r:thermal_link_device:s0
 
 # FPS Info
 /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps                       u:object_r:sysfs_fps:s0
@@ -28,6 +29,7 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service-pn55x                                u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.lge_msmnile     u:object_r:hal_fingerprint_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.lge-libperfmgr                         u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.thermal@2\.0-service\.lge                             u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lge\.hardware\.vss_ims@1\.0-service                              u:object_r:hal_vss_ims_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.lge_msmnile                         u:object_r:hal_lineage_touch_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lge\.hardware\.lgdata@1\.1-service                               u:object_r:hal_lgdata_default_exec:s0
@@ -122,6 +124,9 @@
 /sys/devices/virtual/misc/msm_amrwbplus/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/fastrpc/adsprpc-smd/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/fastrpc/adsprpc-smd-secure/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+
+# Thermal
+/vendor/bin/thermal_symlinks                                    u:object_r:init-thermal-symlinks-sh_exec:s0
 
 # UFS
 /sys/devices/platform/soc/[a-f0-9]+.ufshc/clkgate_enable        u:object_r:vendor_sysfs_scsi_host:s0
