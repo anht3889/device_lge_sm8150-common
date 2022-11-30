@@ -214,7 +214,8 @@ ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8150
 
 # Voice
-vendor.voice.path.for.pcm.voip=false
+vendor.voice.path.for.pcm.voip=true
+use.dedicated.device.for.voip=true
 
 # Volume
 ro.config.vc_call_vol_steps=7
