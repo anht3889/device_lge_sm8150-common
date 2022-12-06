@@ -66,6 +66,9 @@ ro.nfc.port=I2C
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=64
 
+# Phantom Process Killing
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # Processor Model
 ro.processor.model=SM8150
 
