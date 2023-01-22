@@ -19,4 +19,7 @@
     <privapp-permissions package="org.lineageos.settings.device">
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
+    <privapp-permissions package="org.lineageos.settings.device.dac">
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+    </privapp-permissions>
 </permissions>
