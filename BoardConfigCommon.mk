@@ -150,15 +150,15 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_SOURCE := kernel/lge/sm8150
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r475365b
-TARGET_CLANG_PREBUILTS_VERSION := r475365b
+TARGET_KERNEL_CLANG_VERSION := r487747
+TARGET_CLANG_PREBUILTS_VERSION := r487747
 TARGET_KERNEL_ADDITIONAL_FLAGS := DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
-TARGET_KERNEL_ADDITIONAL_FLAGS += AR=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-r475365b/bin/llvm-ar
+TARGET_KERNEL_ADDITIONAL_FLAGS += AR=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-r487747/bin/llvm-ar
 TARGET_KERNEL_ADDITIONAL_FLAGS += AS=llvm-as
 TARGET_KERNEL_ADDITIONAL_FLAGS += BRAND_SHOW_FLAG=oneplus
 TARGET_KERNEL_ADDITIONAL_FLAGS += DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc
 TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-Wno-unused-command-line-argument"
-TARGET_KERNEL_ADDITIONAL_FLAGS += LD=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-r475365b/bin/ld.lld
+TARGET_KERNEL_ADDITIONAL_FLAGS += LD=$(shell pwd)/prebuilts/clang/host/linux-x86/clang-r487747/bin/ld.lld
 TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM=1
 TARGET_KERNEL_ADDITIONAL_FLAGS += LLVM_IAS=1
 TARGET_KERNEL_ADDITIONAL_FLAGS += NM=llvm-nm
@@ -204,7 +204,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 VENDOR_SECURITY_PATCH := 2020-01-01
 
 # SELinux
-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
