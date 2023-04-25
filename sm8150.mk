@@ -499,6 +499,11 @@ PRODUCT_PACKAGES += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.lge_msmnile
+    
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.lge \
+    thermal_symlinks
 
 # Touchscreen
 PRODUCT_PACKAGES += \
