@@ -9,5 +9,6 @@ soong_namespace {
         "hardware/google/interfaces",
         "hardware/google/pixel",
         "hardware/lge",
+        "hardware/qcom-caf/bootctrl",
     ],
 }

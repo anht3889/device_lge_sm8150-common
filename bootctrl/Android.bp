@@ -13,10 +13,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-soong_namespace {
-    imports: ["hardware/qcom-caf/bootctrl"],
-}
-
 cc_library {
     name: "bootctrl.msmnile",
     defaults: ["bootctrl_hal_defaults"],

@@ -25,7 +25,11 @@ PRODUCT_USES_QCOM_HARDWARE := true
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH)/bootctrl
+    $(COMMON_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/lge \
+    hardware/qcom-caf/bootctrl
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \

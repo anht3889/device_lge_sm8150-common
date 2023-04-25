@@ -118,7 +118,7 @@ DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 ODM_MANIFEST_FILES := $(COMMON_PATH)/manifest-qva.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_lge_msmnile
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_lge_msmnile
 TARGET_RECOVERY_DEVICE_MODULES := libinit_lge_msmnile
 
 # Keystore
