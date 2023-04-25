@@ -217,7 +217,7 @@
             "SendPowerHint": true
         },
         {
-            "Name":"xo_therm",
+            "Name":"xo-therm",
             "Type":"UNKNOWN",
             "HotThreshold":[
                 "NAN",
