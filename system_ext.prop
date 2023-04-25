@@ -52,6 +52,9 @@ persist.rmnet.data.enable=true
 # NFC
 ro.nfc.port=I2C
 
+# Thermal
+vendor.thermal.config=thermal_info_config.json
+
 # Time
 persist.timed.enable=true
 
